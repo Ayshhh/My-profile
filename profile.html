@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Ayshhh | Backend Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Ayshhh</div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+      <ul>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero animated-hero">
+      <canvas id="hero-bg"></canvas>
+      <div class="hero-content animated-fadein">
+        <img src="profile_pic.JPG" alt="Profile picture" class="avatar animated-popin">
+        <h1 class="animated-slidein">Aysha Chirakuzhi Mohamed Rasheed</h1>
+        <h2 class="animated-slidein-delay">Backend Developer</h2>
+        <p class="animated-fadein-delay">
+          I build robust, scalable systems and APIs. With a passion for elegant code and high performance, I turn business needs into reliable backend solutions.
+        </p>
+        <div class="hero-icons">
+          <a href="mailto:ayshh.rasheed@gmail.com" title="Email" class="animated-bouncein"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/Ayshhh" target="_blank" title="GitHub" class="animated-bouncein" style="animation-delay:.2s"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/aysha-c-m-77a85b185/" target="_blank" title="LinkedIn" class="animated-bouncein" style="animation-delay:.4s"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <!-- <a href="#contact" class="cta-btn animated-bouncein" style="animation-delay:.4s">Let’s Connect</a> -->
+      </div>
+    </section>
+  </header>
+  <main>
+    <section id="profile" class="section">
+      <h2 class="section-title"><i class="fas fa-user"></i> Profile</h2>
+      <p>
+        Experienced Backend Developer with over four years of expertise in server-side programming and database management. Proficient in C#, with intermediate knowledge of C++ and Python, and extensive experience in frameworks such as .NET. Skilled in designing and optimizing database structures using MySQL, PostgreSQL, and Snowflake, ensuring efficiency and scalability. Adept at implementing version control with Git and GitHub, and streamlining ETL processes using tools like SnapLogic. Demonstrated ability to develop secure, high-performance, and scalable applications, with a strong focus on best practices and optimization. Passionate about leveraging technology to solve complex challenges and eager to contribute to innovative projects in a dynamic work environment.
+      </p>
+    </section>
+    <section id="work" class="section">
+      <h2 class="section-title"><i class="fas fa-briefcase"></i> Work Experience</h2>
+      <div class="work-item card">
+        <div class="work-header" onclick="toggleCollapse(this)">
+          <h3>Jnr .NET Developer, CBRE (Payroll of Prudent)</h3>
+          <span>Sep 2022 – Apr 2025 <i class="fas fa-chevron-down"></i></span>
+        </div>
+        <ul class="collapsible">
+          <li>Collaborated with cross-functional teams to develop features aligned with business needs.</li>
+          <li>Worked with Graph APIs and Azure Key Vault for secure, efficient data management.</li>
+          <li>Developed scalable RESTful APIs using .NET 8.0.</li>
+          <li>Designed SnapLogic pipelines for data integration and processing.</li>
+          <li>Created Power BI dashboards for data-driven decision making.</li>
+          <li>Optimized Snowflake stored procedures for performance.</li>
+          <li>Maintained reliability with comprehensive unit tests.</li>
+          <li>Received Spot Award for outstanding performance (three consecutive quarters).</li>
+        </ul>
+      </div>
+      <div class="work-item card">
+        <div class="work-header" onclick="toggleCollapse(this)">
+          <h3>Application Developer, Epoq Zero</h3>
+          <span>Oct 2020 – Sep 2022 <i class="fas fa-chevron-down"></i></span>
+        </div>
+        <ul class="collapsible">
+          <li>Led development of cross-platform applications (Xamarin).</li>
+          <li>Delivered key web-based projects meeting client requirements.</li>
+          <li>Designed secure RESTful APIs for interactive solutions.</li>
+          <li>Developed a chat portal with SignalR for real-time communication.</li>
+          <li>Completed 3 robust backend projects.</li>
+        </ul>
+      </div>
+      <div class="work-item card">
+        <div class="work-header" onclick="toggleCollapse(this)">
+          <h3>Intern, Indian OpenSource Community</h3>
+          <span>Jun 2020 – Jul 2020 <i class="fas fa-chevron-down"></i></span>
+        </div>
+        <ul class="collapsible">
+          <li>Hands-on experience with cloud technologies.</li>
+          <li>Assisted projects using analytical skills.</li>
+        </ul>
+      </div>
+    </section>
+    <section id="projects" class="section">
+      <h2 class="section-title"><i class="fas fa-folder-open"></i> Projects</h2>
+      <div class="projects-grid">
+        <div class="project card">
+          <strong>Investor Portal</strong>
+          <ul>
+            <li>Integrated OKTA authentication for secure access.</li>
+            <li>Led backend API development.</li>
+            <li>Resolved Vera code and Snyk vulnerabilities.</li>
+            <li>Developed Salesforce-triggered data pipelines using SnapLogic.</li>
+            <li> Implemented a library for uploading Excel files to Amazon S3, improving 
+data accessibility and integrity.</li>
+          </ul>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=in.testpress.estudo&pcampaignid=web_share" class="project card project-link" target="_blank">
+          <strong>Estudo</strong>
+          <ul>
+            <li>Engineered cross-platform app for Android/iOS.</li>
+            <li>Designed intuitive front-end interface.</li>
+            <li>Developed a native video player.</li>
+          </ul>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.saltmango.app&pcampaignid=web_share" class="project card project-link" target="_blank">
+          <strong>SaltMango</strong>
+          <ul>
+            <li>Implemented live quiz feature to boost engagement.</li>
+            <li>Integrated AdMob for ad generation.</li>
+          </ul>
+        </a>
+      </div>
+    </section>
+    <section id="skills" class="section">
+      <h2 class="section-title"><i class="fas fa-cogs"></i> Skills</h2>
+      <ul class="skills-list">
+        <li><strong>Programming Languages:</strong> C#, C, C++, Python</li>
+        <li><strong>Frameworks:</strong> .NET, Xamarin, Unity</li>
+        <li><strong>Database:</strong> MySQL, PostgreSQL, Snowflake</li>
+        <li><strong>Version Control:</strong> Git, GitHub</li>
+        <li><strong>Business Intelligence:</strong> Power BI</li>
+        <li><strong>ETL:</strong> SnapLogic</li>
+      </ul>
+    </section>
+    <section id="achievements" class="section">
+      <h2 class="section-title"><i class="fas fa-trophy"></i> Achievements</h2>
+      <ul>
+        <li>3rd Place, SHE Hacks Hackathon GEC Palakkad – Developed a solution to support farmers in agriculture.</li>
+        <li>Mentored 30+ students in Xamarin for cross-platform app development.</li>
+        <li>Tinkerhub Learning Facilitator – Guided 8 students in web development and website publication.</li>
+        <li>IEEE Technical Coordinator – Led website development and organized hackathons.</li>
+        <li>IEEE WIE Chair – Conducted inter-college hackathons and created a newsletter website promoting diversity in tech.</li>
+      </ul>
+    </section>
+    <section id="education" class="section">
+      <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+      <ul>
+        <li>
+          <strong>MSc Artificial Intelligence </strong>     (May 2025 – present) <br>
+          Berlin School of Business and Innovation, Berlin <br>
+        </li>
+        <li>
+          <strong>B-Tech in Information Technology </strong>    (2018 – 2022) <br>
+          Government Engineering College, Palakkad
+        </li>
+      </ul>
+    </section>
+    <section id="contact" class="section">
+      <h2 class="section-title"><i class="fas fa-paper-plane"></i> Contact</h2>
+      <div class="contact-box card">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:ayshh.rasheed@gmail.com">ayshh.rasheed@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> +49 15510 267936</p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/Ayshhh" target="_blank">Ayshhh</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/aysha-c-m-77a85b185/" target="_blank">Aysha</a></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Ayshhh. All rights reserved.</p>
+  </footer>
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+          .scrollIntoView({behavior: 'smooth'});
+        if(window.innerWidth < 800) document.getElementById('nav-toggle').checked = false;
+      });
+    });
+
+    // Collapsible cards for work experience
+    function toggleCollapse(header) {
+      const list = header.nextElementSibling;
+      list.classList.toggle('show');
+      header.querySelector('i').classList.toggle('fa-chevron-up');
+      header.querySelector('i').classList.toggle('fa-chevron-down');
+    }
+
+    // Animated hero background (subtle particles)
+    const canvas = document.getElementById('hero-bg');
+    if(canvas) {
+      const ctx = canvas.getContext('2d');
+      let w, h, particles = [];
+      function resize() {
+        w = canvas.width = window.innerWidth;
+        h = canvas.height = document.querySelector('.hero').offsetHeight;
+      }
+      window.addEventListener('resize', resize);
+      function initParticles() {
+        particles = [];
+        for(let i = 0; i < 48; i++) {
+          particles.push({
+            x: Math.random()*w,
+            y: Math.random()*h,
+            r: 1+Math.random()*2,
+            dx: -0.2+Math.random()*0.4,
+            dy: -0.1+Math.random()*0.2,
+            a: 0.07+Math.random()*0.12
+          });
+        }
+      }
+      function draw() {
+        ctx.clearRect(0,0,w,h);
+        for (let p of particles) {
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, 2*Math.PI);
+          ctx.fillStyle = `rgba(142,84,233,${p.a})`;
+          ctx.shadowBlur = 8;
+          ctx.shadowColor = "#8e54e9";
+          ctx.fill();
+          p.x += p.dx;
+          p.y += p.dy;
+          if (p.x < 0 || p.x > w || p.y < 0 || p.y > h) {
+            p.x = Math.random()*w;
+            p.y = Math.random()*h;
+          }
+        }
+        ctx.shadowBlur = 0;
+        requestAnimationFrame(draw);
+      }
+      resize();
+      initParticles();
+      draw();
+    }
+  </script>
+</body>
+</html>
